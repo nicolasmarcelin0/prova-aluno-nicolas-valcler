@@ -1,0 +1,24 @@
+{
+  "name": "prova-aluno-nicolas-valcler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasmarcelino/prova-aluno-nicolas-valcler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolasmarcelino/prova-aluno-nicolas-valcler/issues"
+  },
+  "homepage": "https://github.com/nicolasmarcelino/prova-aluno-nicolas-valcler#readme",
+  "dependencies": {
+    "knex": "^2.0.0",
+    "sqlite3": "^5.0.8"
+  }
+}
