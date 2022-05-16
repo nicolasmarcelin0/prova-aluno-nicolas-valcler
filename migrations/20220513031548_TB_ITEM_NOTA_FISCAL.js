@@ -10,7 +10,7 @@
         table.double('valor')
         table.string('produto').references('TB_PRODUTO.id')
             .notNull().defaultTo(true)
-        table.integer('nota_fiscal_id').notNull()
+        table.integer('notaFiscal_id').references('TB_NOTA_FISCAL_VENDA.id')
     })
 };
 
