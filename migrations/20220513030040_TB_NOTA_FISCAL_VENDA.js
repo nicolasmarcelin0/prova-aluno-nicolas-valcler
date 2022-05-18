@@ -2,6 +2,8 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
+
+//codigo, data, valorNota, cliente_id, itens_id
  exports.up = function(knex, Promise) {
     return knex.schema.createTable('TB_NOTA_FISCAL_VENDA', table => {
         table.increments('id').primary()
@@ -15,5 +17,5 @@
 };
 
 exports.down = function(knex, Promise) {
-    return knex.schema.dropTable('TTB_NOTA_FISCAL_VENDA')
+    return knex.schema.dropTable('TB_NOTA_FISCAL_VENDA')
 };
