@@ -1,0 +1,2 @@
+Implementar scripts Javascript com as funcionalidades Knex que equivalem as seguintes instruções SQL: Insert, Select, Update e Delete.
+Os scripts devem comtemplar todas as tabelas do modelo da Avaliação-04.
