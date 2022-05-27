@@ -12,7 +12,6 @@ exports.seed = async function(knex) {
 
   // Função para o retorno so select, já ao executar os seeds
   function runKnex(){
-    // Select do código do produto e sua descrição
     var result = knex.column('codigo', 'descricao').select().from('TB_PRODUTO')
      return result.then(function(rows){
         return rows;

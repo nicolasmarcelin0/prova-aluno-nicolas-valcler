@@ -2,14 +2,13 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> } 
  */
+
 exports.seed = async function(knex) {
 // Insert
 await knex('TB_NOTA_FISCAL_VENDA').insert([{codigo: 170, data: '11/05/2022', valorNota: 23.4, cliente_id: 92, itens_id: 121}]);
-//await knex('TB_NOTA_FISCAL_VENDA').insert([{}]);
 
 // Função para o retorno so select, já ao executar os seeds
 function runKnex(){
-  // Select do código do produto e sua descrição
   var result = knex.column('data', 'itens_id').select().from('TB_NOTA_FISCAL_VENDA')
    return result.then(function(rows){
       return rows;
@@ -30,6 +29,6 @@ await knex('TB_NOTA_FISCAL_VENDA')
 // Delete
 await knex('TB_NOTA_FISCAL_VENDA')
 .where('data', '=', '14/02/2022') 
-.del()                        
+.del()                     
 
 };
